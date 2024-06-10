@@ -1,0 +1,13 @@
+import xlsxwriter
+
+workbook = xlsxwriter.Workbook('arrays.xlsx')
+worksheet = workbook.add_worksheet()
+
+array = [["air", "terjun", "nglirip", "pisah", "warga", "air", "terjun", "muara", "sungai", "bukit", "desa", "mulyoagung", "camat", "singgah", "kabupaten", "tuban", "jawa", "timur", "sarat", "nilai", "religi", "masuk", "aura", "misteri", "limut", "kompleks", "wisata", "air", "terjun", "satusatunya", "tuban", "ada", "yakin", "warga", "warga", "tuban", "air", "terjun", "nglirip", "milik", "kisah", "cinta", "legenda", "mungkin", "beda", "romeo", "and", "juliet", "karya", "sastrawan", "inggris", "william", "shakespeare", "tragedi", "legenda", "putri", "nglirip", "bayang", "hidup", "alam", "warga", "mulyoagung", "desadesa", "air", "terjun", "nglirip", "mainmain", "jangan", "cobacoba", "bawa", "pacar", "wisata", "nglirip", "jamin", "pasang", "langgeng", 40, "putri", "nglirip", "suka", "orang", "madu", "kasih", "daerah", "kuasa", "buat", "cemburu", "barangkali", "sudah", "bukti", "bukti", "mereka", "pisah", "kasih", "kencan", "air", "terjun", "nglirip", "di", "yakin", "perawan", "bujang", "mandi", "air", "terjun", "nglirip", "mudah", "temu", "jodoh", "fenomena", "tren", "air", "terjun", "belah", "hutan", "jati", "tuju", "anakanak", "muda", "wisata", "ihwal", "legenda", "percaya", "warga", "kait", "ada", "putri", "nglirip", "yakin", "sang", "putri", "patah", "hati", "lajang", "karena", "sakti", "pindah", "alam", "banyak", "versi", "muncul", "kait", "legenda", "nglirip", "salah", "satu", "sebut", "legenda", "nglirip", "temu", "salah", "adipati", "tuban", "zaman", "raja", "majapahit", "kala", "sang", "adipati", "pesona", "cantik", "perawan", "desa", "anak", "tokoh", "sakti", "desa", "perawan", "pinang", "jadi", "istri", "sekian", "adipati", "meski", "istri", "adipati", "milik", "anak", "perawan", "boyong", "pendapa", "kadipaten", "sang", "anak", "milik", "kasih", "rakyat", "jelata", "tapi", "hubung", "asmara", "tentang", "orangtuanya", "ibu", "ayah", "adipati", "sang", "anak", "minggat", "rumah", "kasih", "konon", "nama", "joko", "lelono", "tewas", "bunuh", "prajurit", "kadipaten", "perintah", "ayah", "sang", "putri", "tapa", "salah", "gua", "air", "terjun", "hutan", "air", "terjun", "nglirip", "putri", "patah", "hati", "tutup", "tolak", "temu", "hingga", "sang", "putri", "muncul", "ambil", "air", "dasar", "air", "terjun", "nglirip", "warga", "putri", "nglirip", "marah", "rumah", "gua", "air", "terjun", "nglirip", "pakai", "pacar", "tapi", "pasang", "suami", "istri", "apaapa"]]
+
+row = 0
+
+for col, data in enumerate(array):
+    worksheet.write_column(row, col, data)
+
+workbook.close()
